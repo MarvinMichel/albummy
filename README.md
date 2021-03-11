@@ -14,11 +14,11 @@ Maar wat als je nu een Windows gebruiker bent? Dan heeft de duivel een plekje vo
 ### Bevindingen
 Met deze info ben ik het web gaan testen dat ik regelmatig gebruik. Waar beter beginnen dan bij GitHub?! Hier zie je direct dat er best wel goed is nagedacht over het contrast. Bij iedere filter is duidelijk een onderscheid te maken tussen de elementen. Zelfs bij greyscale is het meeste redelijk helder te onderscheiden. Alleen bij de distributions sectie op je profiel zijn de verschillende kleuren groen wat lastig te onderscheiden. Met name de heel licht groen en de witte vlakken.
 
-<img width="1000" alt="Greyscaled distibution" src="https://user-images.githubusercontent.com/25977763/110789355-124e4700-8270-11eb-90d6-78193075148a.jpg"/>
+<img width="100%" alt="Greyscaled distibution" src="https://user-images.githubusercontent.com/25977763/110789355-124e4700-8270-11eb-90d6-78193075148a.jpg"/>
 
 Ook heb ik een project van mezelf bekeken door de ogen van een kleurenblind iemand. Ik heb gekozen om een project te bekijken waar ik niet bewust bezig ben geweest met contrast. Ook hier viel het eigenlijk reuze mee. Wat ik echter niet had verwacht is dat gradient kleuren heel slecht te zien zijn met kleurenblindheid. Het is logisch, maar ik had hier nooit bij stil gestaan.
 
-<img width="450" alt="expense-tracker-color" src="https://user-images.githubusercontent.com/25977763/110790239-1a5ab680-8271-11eb-8a0e-f68234029303.png"><img width="450" alt="expense-tracker-nocolor" src="https://user-images.githubusercontent.com/25977763/110790244-1cbd1080-8271-11eb-922b-b232ade93a9c.png">
+<img width="50%" alt="expense-tracker-color" src="https://user-images.githubusercontent.com/25977763/110790239-1a5ab680-8271-11eb-8a0e-f68234029303.png"><img width="50%" alt="expense-tracker-nocolor" src="https://user-images.githubusercontent.com/25977763/110790244-1cbd1080-8271-11eb-922b-b232ade93a9c.png">
 
 ### Conclusie
 Tegenwoordig is het heel makkelijk om te stappen in het leven van een kleurenblind persoon op het web. Wellicht dat je het daarom zo geïntegreerd terug ziet op het web. De meeste websites die ik dagelijks bezoek of zelf heb gemaakt zijn heel goed te gebruiken als je kleurenblind bent. De ervaring van het design is echter wel totaal anders. De website krijgt een hele andere sfeer dan dat origineel bedoeld was. Het is helaas niet een optie op sites om een color-blind mode aan te zetten, die de kleuren zodanig aanpast dat het de sfeer bewaard. Wellicht een coole toekomstige trend naast darkmode?👀
