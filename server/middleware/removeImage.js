@@ -7,4 +7,11 @@ function removeImage({ id }) {
   })
 }
 
-module.exports = removeImage
+function removeAllImages() {
+  Images.deleteMany({ }, err => {
+    console.error(chalk.red(err))
+  })
+}
+
+exports.removeImage = removeImage
+exports.removeAllImages = removeAllImages

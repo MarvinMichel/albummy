@@ -55,9 +55,8 @@ if (dropZone) {
   }
 }
 
-if (slideShow) {
+if (slideShow && typeof slideShow.scrollIntoView !== "undefined") {
   const sliderButtons = slideShow.querySelectorAll("button")
-  const slideContent = slideShow.querySelectorAll(".slideshow--content")
   const slides = slideShow.querySelectorAll("img")
 
   let index = 0
@@ -69,6 +68,7 @@ if (slideShow) {
 
   function slideImage(e) {
     const targetId = e.target.id
+
     if (targetId === "prev") {
       if (index === 0) {
         index = slides.length - 1
