@@ -2,7 +2,7 @@
   "name": "albummy",
   "version": "1.0.0",
   "description": "Progressively enhanced online collection of images and image albums, which you can upload to the database.",
-  "main": "server.js",
+  "main": "/",
   "scripts": {
     "start": "node ./server/server.js",
     "dev": "nodemon ./server/server.js"
