@@ -1,0 +1,29 @@
+<%- include('./partials/head', { title: "Edit" }) %>
+<main>
+  <form method="POST" class="edit">
+    <fieldset>
+      <input
+        type="text"
+        name="name"
+        class="edit--title"
+        id="name"
+        value="<%= image.name %>"
+      >
+      <figure class="edit--photo">
+        <img 
+          src="data:image/<%=image.img.contentType%>;base64, <%=image.img.data.toString('base64')%>"
+          alt="<%= image.description %>"
+        >
+      </figure>
+    </fieldset>
+    <fieldset>
+      <textarea
+        name="desc"
+        id="desc"
+        class="edit--desc"
+      ><%= image.description %></textarea>
+      <button type="submit">Save changes</button>
+    </fieldset>
+  </form>
+</main>
+<%- include('./partials/foot') %>

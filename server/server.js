@@ -13,6 +13,7 @@ const db = createConnection()
 const indexRoute = require('./routes/index')
 const imagesRoute = require('./routes/images')
 const uploadRoute = require('./routes/upload')
+const editRoute = require('./routes/edit')
 
 app
   .set('view engine', 'ejs')
@@ -23,6 +24,7 @@ app
   .use('/', indexRoute)
   .use('/images', imagesRoute)
   .use('/upload', uploadRoute)
+  .use('/edit', editRoute)
   .listen(PORT, () => {
     console.log(chalk.green(`Server running at port ${PORT}`))
   })

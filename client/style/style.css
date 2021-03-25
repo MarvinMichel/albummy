@@ -56,7 +56,6 @@ header a {
 main {
   align-items: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   min-height: 75vh;
 }
@@ -129,6 +128,14 @@ main {
   left: 0;
   padding: .5em 1em;
   position: absolute;
+  top: 0;
+}
+
+.slideshow--content__figure a {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
   top: 0;
 }
 
@@ -258,11 +265,65 @@ main {
 	outline: -webkit-focus-ring-color auto 2px;
 }
 
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-  to {
-    opacity: 1
-  }
+/************* Edit Images Form *******************/
+.edit {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 20em;
+  width: 80%;
+}
+
+.edit fieldset {
+  border: none;
+  min-width: 20em;
+  width: 50%;
+}
+
+.edit figure {
+  height: 25em;
+}
+
+.edit fieldset img {
+  object-fit: contain;
+}
+
+.edit fieldset:nth-of-type(2) {
+  margin: auto 0;
+  padding: 5%;
+}
+
+.edit--title {
+  font-family: 'Quicksand';
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: .5em;
+  width: 100%;
+}
+
+.edit--title,
+.edit--desc {
+  border: .05em solid transparent;
+}
+
+.edit--title:hover,
+.edit--desc:hover {
+  border-color: var(--color-main);
+}
+
+.edit--title.mobile,
+.edit--desc.mobile {
+  border: .05em solid var(--color-main);
+}
+
+.edit textarea {
+  height: 10em;
+  resize: none;
+  width: 100%;
+}
+
+.edit--photo,
+.edit--photo img {
+  background: var(--color-main);
+  height: 100%;
+  width: 100%;
 }

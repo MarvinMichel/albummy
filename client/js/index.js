@@ -1,7 +1,15 @@
+// HTML elements
 const dropZone = document.getElementById("drop-zone")
 const slideShow = document.querySelector(".slideshow")
+const editInputs = document.querySelectorAll(".edit input, .edit textarea")
 
-if (dropZone) {
+// Feature detection
+const isTouchDevice = ("ontouchstart" in document.documentElement)
+const dropSupported = ("ondrop" in document.documentElement)
+const scrollIntoViewSupported = ("scrollIntoView" in document.documentElement)
+const fileReaderSupported = ("FileReader" in window)
+
+if (dropZone && dropSupported) {
   const selectFileButton = dropZone.querySelector('input[type=file]')
 
   dropZone.addEventListener("dragover", (e) => {
@@ -18,6 +26,7 @@ if (dropZone) {
     e.preventDefault()
     const images = e.dataTransfer.files
     handleDrop(images)
+    e.target.classList.remove("active")
   })
 
   selectFileButton.addEventListener("change", (e) => {
@@ -27,23 +36,15 @@ if (dropZone) {
   })
   
   function handleDrop(images) {
+    selectFileButton.files = images
     images = [...images]
-    images.forEach((image) => {
-      uploadImage(image)
-      if ("FileReader" in window) previewImage(image)
-    })
+    if (fileReaderSupported) {
+      images.forEach(image => {
+        previewImage(image)
+      })
+    }
   }
-  
-  function uploadImage(image) {
-    const url = "/upload"
-    const xhr = new XMLHttpRequest()
-    const formData = new FormData()
     
-    xhr.open("POST", url, true)
-  
-    formData.append("image", image)
-  }
-  
   function previewImage(image) {
     const reader = new FileReader()
     reader.readAsDataURL(image)
@@ -55,7 +56,7 @@ if (dropZone) {
   }
 }
 
-if (slideShow && typeof slideShow.scrollIntoView !== "undefined") {
+if (slideShow && scrollIntoViewSupported) {
   const sliderButtons = slideShow.querySelectorAll("button")
   const slides = slideShow.querySelectorAll("img")
 
@@ -87,4 +88,8 @@ if (slideShow && typeof slideShow.scrollIntoView !== "undefined") {
       }
     }
   }
+}
+
+if (isTouchDevice) {
+  editInputs.forEach(input => input.classList.add('mobile'))
 }
