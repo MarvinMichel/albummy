@@ -1,5 +1,6 @@
 ## Use Case
-[Online Foto Album](https://github.com/cmda-minor-web/browser-technologies-2021/blob/master/course/Usecase-online-foto-album.md)
+[Online Foto Album](https://github.com/cmda-minor-web/browser-technologies-2021/blob/master/course/Usecase-online-foto-album.md):
+
 The goal of this project, was to create a web-application that is progressivly enhanced. This means that you start with plain HTML to make sure that the core features of the application will work for everyone. You can build different layers of functionality, to make the app look better and/or improve UX.
 
 ## Live Preview
