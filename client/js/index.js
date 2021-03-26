@@ -6,8 +6,8 @@ const editInputs = document.querySelectorAll(".edit input, .edit textarea")
 // Feature detection
 const isTouchDevice = ("ontouchstart" in document.documentElement)
 const dropSupported = ("ondrop" in document.documentElement)
-const scrollIntoViewSupported = ("scrollIntoView" in document.documentElement)
 const fileReaderSupported = ("FileReader" in window)
+const scrollIntoViewSupported = ("scrollIntoView" in document.documentElement)
 
 if (dropZone && dropSupported) {
   const selectFileButton = dropZone.querySelector('input[type=file]')
