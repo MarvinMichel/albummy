@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
   res.render('upload')
 })
 
-router.post('/', upload.single('image'), (req, res) => {
+router.post('/', upload.single('file'), (req, res) => {
   const image = {
     name: req.body.name,
     desc: req.body.desc,
