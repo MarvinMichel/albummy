@@ -65,12 +65,12 @@ main {
   border-radius: 50%;
   bottom: 5%;
   color: transparent;
-  height: 3em;
+  height: 3.5em;
   padding: .5em;
   position: fixed;
   right: 5%;
   transition: transform .3s ease-in-out;
-  width: 3em;
+  width: 3.5em;
 }
 
 .button--add:hover {
@@ -93,7 +93,7 @@ main {
 /************* Image slideshow ************************/
 .slideshow {
   background-color: #131212;
-  height: 70vh;
+  height: 60vh;
   position: relative;
   width: clamp(15em, 90%, 50em);
 }
@@ -113,6 +113,7 @@ main {
   height: 100%;
   position: relative;
   scroll-snap-align: start;
+  transition: transform .5s ease-in-out;
   width: 100%;
 }
 
