@@ -76,7 +76,6 @@ if (slideShow && scrollIntoViewSupported && !isTouchDevice) {
     const targetId = e.target.id
 
     if (targetId === "prev") {
-      alert(index)
       if (index === 0) {
         index = slides.length - 1
         slides[index].scrollIntoView()
@@ -85,7 +84,6 @@ if (slideShow && scrollIntoViewSupported && !isTouchDevice) {
         slides[index].scrollIntoView()
       }
     } else {
-      alert(index)
       if (index === (slides.length - 1)) {
         index = 0
         slides[index].scrollIntoView()
