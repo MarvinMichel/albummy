@@ -61,7 +61,7 @@ if (dropZone) {
   }
 }
 
-if (slideShow && scrollIntoViewSupported) {
+if (slideShow && scrollIntoViewSupported && !isTouchDevice) {
   const sliderButtons = slideShow.querySelectorAll("button")
   const slides = slideShow.querySelectorAll("img")
 
@@ -76,6 +76,7 @@ if (slideShow && scrollIntoViewSupported) {
     const targetId = e.target.id
 
     if (targetId === "prev") {
+      alert(index)
       if (index === 0) {
         index = slides.length - 1
         slides[index].scrollIntoView()
@@ -84,6 +85,7 @@ if (slideShow && scrollIntoViewSupported) {
         slides[index].scrollIntoView()
       }
     } else {
+      alert(index)
       if (index === (slides.length - 1)) {
         index = 0
         slides[index].scrollIntoView()
