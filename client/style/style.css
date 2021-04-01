@@ -92,7 +92,7 @@ main {
 
 /************* Image slideshow ************************/
 .slideshow {
-  background-color: #131212;
+  background-color: var(--color-main);
   height: 60vh;
   position: relative;
   width: clamp(15em, 90%, 50em);
@@ -125,7 +125,7 @@ main {
 
 .slideshow--content__figure__description {
   background: #13121285;
-  color: #ffbf00;
+  color: var(--color-secondary);
   left: 0;
   padding: .5em 1em;
   position: absolute;
@@ -283,7 +283,6 @@ main {
   transform: scale(1.02);
 }
 
-/* Adding an outline to the label on focus */
 input:focus + label {
   outline: 1px solid #000;
   outline: -webkit-focus-ring-color auto 2px;
@@ -375,10 +374,10 @@ input:focus + label {
   border-radius: 50%;
   display: flex;
   height: 2.5em;
-  left: clamp(22em, 47.5%, 100vw);
+  left: clamp(27em, 47.5%, 100vw);
   justify-content: center;
   position: absolute;
-  top: 2em;
+  top: 2.5em;
   transition: 
     background .2s ease-in-out,
     transform .2s ease-in-out;

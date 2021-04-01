@@ -14,33 +14,33 @@ if (dropZone) {
   const fileNameContainer = document.getElementById("file-name")
 
   dropZone.addEventListener("dragover", (e) => {
-    e.preventDefault()
     e.target.classList.add("active")
+    e.preventDefault()
   })
   
   dropZone.addEventListener("dragleave", (e) => {
-    e.preventDefault();
     e.target.classList.remove("active")
+    e.preventDefault()
   })
 
   if (dropSupported) {
     dropZone.addEventListener("drop", (e) => {
-      e.preventDefault()
       const images = e.dataTransfer.files
-      handleDrop(images)
+      handleUpload(images)
       e.target.classList.remove("active")
+      e.preventDefault()
     })
   }
 
   fileInput.addEventListener("change", (e) => {
-    e.preventDefault()
     const images = e.target.files
     const [{ name: fileName }] = images
     fileNameContainer.textContent = fileName
-    handleDrop(images)
+    handleUpload(images)
+    e.preventDefault()
   })
   
-  function handleDrop(images) {
+  function handleUpload(images) {
     fileInput.files = images
     images = [...images]
     images.forEach(image => {
