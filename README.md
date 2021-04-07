@@ -4,7 +4,7 @@
 The goal of this project, was to create a web-application that is progressivly enhanced. This means that you start with plain HTML to make sure that the core features of the application will work for everyone. You can build different layers of functionality, to make the app look better and/or improve UX.
 
 ## Live Preview
-Check out the live demo [here!](albummy.herokuapp.com/images)
+Check out the live demo [here!](https://albummy.herokuapp.com)
 
 ## Dependencies
 
